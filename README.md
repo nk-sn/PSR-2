@@ -28,32 +28,24 @@
 - Код ОБЯЗАН использовать 4 пробела для отступов, а не табы.
 
 - ОБЯЗАНО НЕ быть жестких пределов длины строки; мягкий предел ОБЯЗАНО быть 120 символов; СЛЕДУЕТ чтобы строки были 80 символов или меньше.
+  
+- ОБЯЗАНА быть одна пустая строка после объявления `namespace`, и там ОБЯЗАНА быть одна пустая строка после блока объявления `use`.  
+  
+- Открывающие фигурные скобки для классов ОБЯЗАНЫ переходить на следующую строку, а закрывающие фигурные скобки ОБЯЗАНЫ переходить на следующую строку после тела класса.
+  
+- Открывающие фигурные скобки для методов класса ОБЯЗАНЫ переходить на следующую строку, а закрывающие фигурные скобки ОБЯЗАНЫ переходить на следующую строку после тела метода.
 
-- There MUST be one blank line after the `namespace` declaration, and there
-  MUST be one blank line after the block of `use` declarations.
+- Видимость ОБЯЗАНА быть объявлена во всех свойствах и методах; `abstract` и `final` ОБЯЗАНЫ объявляться перед видимостью; `static` ОБЯЗАНО объявляться после видимости.
 
-- Opening braces for classes MUST go on the next line, and closing braces MUST
-  go on the next line after the body.
+- Ключевые слова управляющих структур ОБЯЗАНЫ иметь один пробел после них; методы и вызовы функций ОБЯЗАНЫ НЕ.
 
-- Opening braces for methods MUST go on the next line, and closing braces MUST
-  go on the next line after the body.
+- Открывающие фигурные скобки для управляющих структур ОБЯЗАНЫ идти по одной и той же линии, и закрывающие фигурные скобки ОБЯЗАНЫ переходить на следующую строку после тела управлябщей структуры.
+  
+- Открытие круглых скобок для управляющих структур ОБЯЗАНО НЕ иметь пробела после них, и закрывающие круглые скобки для управляющих структур ОБЯЗАНЫ НЕ иметь пробела до.
 
-- Visibility MUST be declared on all properties and methods; `abstract` and
-  `final` MUST be declared before the visibility; `static` MUST be declared
-  after the visibility.
+### 1.1. Пример
 
-- Control structure keywords MUST have one space after them; method and
-  function calls MUST NOT.
-
-- Opening braces for control structures MUST go on the same line, and closing
-  braces MUST go on the next line after the body.
-
-- Opening parentheses for control structures MUST NOT have a space after them,
-  and closing parentheses for control structures MUST NOT have a space before.
-
-### 1.1. Example
-
-This example encompasses some of the rules below as a quick overview:
+Этот пример включает некоторые из приведенных ниже правил в качестве краткого обзора:
 
 ~~~php
 <?php
