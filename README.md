@@ -21,7 +21,7 @@
 [PSR-1]: https://github.com/nk-sn/PSR-1
 [PSR-2]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md
 
-## 1. Overview
+## 1. Обзор
 
 - Код ОБЯЗАН следовать "основному стандарту кода" PSR [[PSR-1]].
 
@@ -75,51 +75,49 @@ class Foo extends Bar implements FooInterface
 }
 ~~~
 
-## 2. General
+## 2. Общие
 
-### 2.1. Basic Coding Standard
+### 2.1. Основной стандарт кода
 
-Code MUST follow all rules outlined in [PSR-1].
+Код ОБЯЗАН следовать всем правилам изложенным в [PSR-1].
 
-### 2.2. Files
+### 2.2. Файлы
 
-All PHP files MUST use the Unix LF (linefeed) line ending.
+Все PHP файлы ОБЯЗАНЫ использовать окончание строки Unix LF (linefeed).
 
-All PHP files MUST end with a single blank line.
+Все файлы PHP ОБЯЗАНЫ заканчиваться одной пустой строкой.
 
-The closing `?>` tag MUST be omitted from files containing only PHP.
+Закрывающий тег `?>` ОБЯЗАН быть опущен из файлов, содержащих только PHP.
 
-### 2.3. Lines
+### 2.3. Строки
 
-There MUST NOT be a hard limit on line length.
+ОБЯЗАНО НЕ быть жестких ограничений длины строки.
 
-The soft limit on line length MUST be 120 characters; automated style checkers
-MUST warn but MUST NOT error at the soft limit.
+Мягкий предел длины строки ОБЯЗАН быть 120 символов; автоматические проверки стиля ОБЯЗАН предупредить, но ОБЯЗАН НЕ выводить ошибку при мягком пределе.
 
-Lines SHOULD NOT be longer than 80 characters; lines longer than that SHOULD
-be split into multiple subsequent lines of no more than 80 characters each.
+НЕ СЛЕДУЕТ чтобы строки были длиннее 80 символов; строки длиннее этого предела СЛЕДУЕТ
+разбивать на несколько последующих строк длиной не более 80 символов.
 
-There MUST NOT be trailing whitespace at the end of non-blank lines.
+ОБЯЗАНО НЕ быть конечных пробелов в конце непустых строк.
 
-Blank lines MAY be added to improve readability and to indicate related
-blocks of code.
+Пустые строки МОГУТ добавляться для улучшения читаемости и указания соответствующих
+блоков кода.
 
-There MUST NOT be more than one statement per line.
+ОБЯЗАНО НЕ быть более одного оператора на строке.
 
-### 2.4. Indenting
+### 2.4. Отступы
 
-Code MUST use an indent of 4 spaces, and MUST NOT use tabs for indenting.
+Код ОБЯЗАН использовать отступы в 4 пробела и ОБЯЗАН НЕ использовать табы для отступов.
 
-> N.b.: Using only spaces, and not mixing spaces with tabs, helps to avoid
-> problems with diffs, patches, history, and annotations. The use of spaces
-> also makes it easy to insert fine-grained sub-indentation for inter-line
-> alignment.
+> N.b.: Использование только пробелов и не смешивания пробелы и табы помогает избежать
+> проблем со сравнением файлов, патчами, история и аннотацией. Использование пробелов
+> также упрощает ввод мелкозернистых подзадач для межстрочного выравнивания.
 
-### 2.5. Keywords and True/False/Null
+### 2.5. Ключевые слова и True/False/Null
 
-PHP [keywords] MUST be in lower case.
+Ключевые слова PHP [keywords] ОБЯЗАНЫ быть в нижнем регистре.
 
-The PHP constants `true`, `false`, and `null` MUST be in lower case.
+Константы PHP `true`, `false`, и `null` ОБЯЗАНЫ быть в нижнем регистре.
 
 [keywords]: http://php.net/manual/en/reserved.keywords.php
 
