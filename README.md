@@ -115,11 +115,11 @@ class Foo extends Bar implements FooInterface
 
 ### 2.5. Ключевые слова и True/False/Null
 
-Ключевые слова PHP [keywords] ОБЯЗАНЫ быть в нижнем регистре.
+[Ключевые слова PHP] ОБЯЗАНЫ быть в нижнем регистре.
 
 Константы PHP `true`, `false`, и `null` ОБЯЗАНЫ быть в нижнем регистре.
 
-[keywords]: http://php.net/manual/en/reserved.keywords.php
+[Ключевые слова PHP]: http://php.net/manual/en/reserved.keywords.php
 
 ## 3. Namespace and Use Declarations
 
