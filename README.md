@@ -121,18 +121,17 @@ class Foo extends Bar implements FooInterface
 
 [Ключевые слова PHP]: http://php.net/manual/en/reserved.keywords.php
 
-## 3. Namespace and Use Declarations
+## 3. Объявление Namespace и Use
 
-When present, there MUST be one blank line after the `namespace` declaration.
+При наличии, ОБЯЗАНА быть одна пустая строка после объявления `namespace`.
 
-When present, all `use` declarations MUST go after the `namespace`
-declaration.
+При наличии, все объявления `use` ОБЯЗАНЫ идти после объявления `namespace`.
 
-There MUST be one `use` keyword per declaration.
+Для каждого объявления ОБЯАЗАНО быть одно ключевое слова `use`.
 
-There MUST be one blank line after the `use` block.
+ОБЯЗАНА быть одна пустая строка после блока `use`.
 
-For example:
+К примеру:
 
 ~~~php
 <?php
@@ -142,7 +141,7 @@ use FooClass;
 use BarClass as Bar;
 use OtherVendor\OtherPackage\BazClass;
 
-// ... additional PHP code ...
+// ... дополнительный PHP код ...
 
 ~~~
 
