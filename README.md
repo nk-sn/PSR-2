@@ -145,17 +145,15 @@ use OtherVendor\OtherPackage\BazClass;
 
 ~~~
 
-## 4. Classes, Properties, and Methods
+## 4. Классы, свойства и методы
 
-The term "class" refers to all classes, interfaces, and traits.
+Термин "класс" относится ко всем классам, интерфейсам и трейтам.
 
-### 4.1. Extends and Implements
+### 4.1. Extends и Implements
 
-The `extends` and `implements` keywords MUST be declared on the same line as
-the class name.
+Ключевые слова `extends` and `implements` ОБЯЗАНЫ быть объявлены на той же линии где и имя класса.
 
-The opening brace for the class MUST go on its own line; the closing brace
-for the class MUST go on the next line after the body.
+Открывающая фигурная скобка для класса ОБЯЗАНА идти со своей новой строки; закрывающая фигурная скобка для класса ОБЯЗАНА на следующей строке после тела класса.
 
 ~~~php
 <?php
@@ -167,13 +165,11 @@ use OtherVendor\OtherPackage\BazClass;
 
 class ClassName extends ParentClass implements \ArrayAccess, \Countable
 {
-    // constants, properties, methods
+    // константы, свойства, методы
 }
 ~~~
 
-Lists of `implements` MAY be split across multiple lines, where each
-subsequent line is indented once. When doing so, the first item in the list
-MUST be on the next line, and there MUST be only one interface per line.
+Список `implements` МОЖЕТ быть разбит на несколько строк, где каждая последующая строка с отступом. При этом, первый элемент списка ОБЯЗАН быть со следущей строки, и ОБЯЗАН быть только один интерфейс на каждую строку.
 
 ~~~php
 <?php
@@ -188,7 +184,7 @@ class ClassName extends ParentClass implements
     \Countable,
     \Serializable
 {
-    // constants, properties, methods
+    // константы, свойства, методы
 }
 ~~~
 
