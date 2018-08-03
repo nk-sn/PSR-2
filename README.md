@@ -188,18 +188,17 @@ class ClassName extends ParentClass implements
 }
 ~~~
 
-### 4.2. Properties
+### 4.2. Свойства
 
-Visibility MUST be declared on all properties.
+Видимость ОБЯЗАНА быть объявлена для всех свойств.
 
-The `var` keyword MUST NOT be used to declare a property.
+Ключевое слово `var` ОБЯЗАНО НЕ быть использовано для объявления свойства.
 
-There MUST NOT be more than one property declared per statement.
+ОБЯЗАНО НЕ быть больше одного свойства, объявленного для каждого оператора.
 
-Property names SHOULD NOT be prefixed with a single underscore to indicate
-protected or private visibility.
+Именам свойств СЛЕДУЕТ НЕ иметь префикс с единственным подчеркиванием для указания видимости `protected` или `private`.
 
-A property declaration looks like the following.
+Объявление свойств выглядит следующим образом.
 
 ~~~php
 <?php
