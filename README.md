@@ -196,7 +196,7 @@ class ClassName extends ParentClass implements
 
 ОБЯЗАНО НЕ быть больше одного свойства, объявленного для каждого оператора.
 
-Именам свойств СЛЕДУЕТ НЕ иметь префикс с единственным подчеркиванием для указания видимости `protected` или `private`.
+Названиям свойств СЛЕДУЕТ НЕ иметь префикс с единственным подчеркиванием для указания видимости `protected` или `private`.
 
 Объявление свойств выглядит следующим образом.
 
@@ -210,20 +210,15 @@ class ClassName
 }
 ~~~
 
-### 4.3. Methods
+### 4.3. Методы
 
-Visibility MUST be declared on all methods.
+Видимость ОБЯЗАНА быть объявлена для всех методов.
 
-Method names SHOULD NOT be prefixed with a single underscore to indicate
-protected or private visibility.
+Названиям методов СЛЕДУЕТ НЕ иметь префикс с единственным подчеркиванием для указания видимости `protected` или `private`.
 
-Method names MUST NOT be declared with a space after the method name. The
-opening brace MUST go on its own line, and the closing brace MUST go on the
-next line following the body. There MUST NOT be a space after the opening
-parenthesis, and there MUST NOT be a space before the closing parenthesis.
+Названия методов ОБЯЗАНЫ быть объявлены без пробела после названия метода. Открывающая фигурная скобка ОБЯЗАНА идти со своей новой строки, и закрывающая фигурная скобка ОБЯЗАНА идти со следующей строки после тела метода. ОБЯЗАНО НЕ быть пробела после открывающей круглой скобки, и ОБЯЗАНО НЕ быть пробела до закрывающей круглой скобки.
 
-A method declaration looks like the following. Note the placement of
-parentheses, commas, spaces, and braces:
+Объявление метода выглядит следующим образом. Обратите внимание на расположение круглых скобок, запятых, пробелом, и фигурных скобок:
 
 ~~~php
 <?php
@@ -233,7 +228,7 @@ class ClassName
 {
     public function fooBarBaz($arg1, &$arg2, $arg3 = [])
     {
-        // method body
+        // тело метода
     }
 }
 ~~~
