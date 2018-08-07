@@ -233,13 +233,11 @@ class ClassName
 }
 ~~~
 
-### 4.4. Method Arguments
+### 4.4. Аргументы метода
 
-In the argument list, there MUST NOT be a space before each comma, and there
-MUST be one space after each comma.
+В списке аргументов ОБЯЗАНО НЕ быть пробела перед каждой запятой, и ОБЯЗАН быть один пробел после каждой запятой.
 
-Method arguments with default values MUST go at the end of the argument
-list.
+Аргументы метода со значениями по умолчанию ОБЯЗАНЫ идти в конце списка аргументов. 
 
 ~~~php
 <?php
@@ -249,18 +247,14 @@ class ClassName
 {
     public function foo($arg1, &$arg2, $arg3 = [])
     {
-        // method body
+        // тело метода
     }
 }
 ~~~
 
-Argument lists MAY be split across multiple lines, where each subsequent line
-is indented once. When doing so, the first item in the list MUST be on the
-next line, and there MUST be only one argument per line.
+Список аргументов МОЖЕТ быть разбит на несколько строк, где каждая последующая строка с отступом. При этом первый элемент в списке ОБЯЗАН быть со следующей строки, и ОБЯЗАНО быть только по одному аргументу на строку.
 
-When the argument list is split across multiple lines, the closing parenthesis
-and opening brace MUST be placed together on their own line with one space
-between them.
+Когда спискок аргументов разбит на несколько строк закрывающая круглая скобка и открывающая фигурная скобка ОБЯЗАНЫ быть помещены вместе на одной строке с одним пробелом между ними. 
 
 ~~~php
 <?php
@@ -273,7 +267,7 @@ class ClassName
         &$arg2,
         array $arg3 = []
     ) {
-        // method body
+        // тело метода
     }
 }
 ~~~
