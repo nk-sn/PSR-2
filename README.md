@@ -272,13 +272,11 @@ class ClassName
 }
 ~~~
 
-### 4.5. `abstract`, `final`, and `static`
+### 4.5. `abstract`, `final`, и `static`
 
-When present, the `abstract` and `final` declarations MUST precede the
-visibility declaration.
+Когда пристутствуют объявления `abstract` и `final` они ОБЯЗАНЫ предшествовать объявления видимости.
 
-When present, the `static` declaration MUST come after the visibility
-declaration.
+Когда пристутствует объявление `static` оно ОБЯЗАНО идти после объявления видимости.
 
 ~~~php
 <?php
@@ -292,7 +290,7 @@ abstract class ClassName
 
     final public static function bar()
     {
-        // method body
+        // тело метода
     }
 }
 ~~~
