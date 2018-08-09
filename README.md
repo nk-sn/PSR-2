@@ -295,13 +295,15 @@ abstract class ClassName
 }
 ~~~
 
-### 4.6. Method and Function Calls
+### 4.6. Методы и вызовы функций
 
 When making a method or function call, there MUST NOT be a space between the
 method or function name and the opening parenthesis, there MUST NOT be a space
 after the opening parenthesis, and there MUST NOT be a space before the
 closing parenthesis. In the argument list, there MUST NOT be a space before
 each comma, and there MUST be one space after each comma.
+
+При вызове метода или функции ОБЯЗАНО НЕ быть пробела между именем метода или функции и открывающей круглой скобки, ОБЯЗАНО НЕ быть пробела после открывающей круглой скобки, ОБЯЗАНО НЕ быть пробела до закрывающей круглой скобки. В списке аргументов ОБЯЗАНО НЕ быть пробела перед каждой запятой и ОБЯЗАН быть один пробел после каждой запятой.
 
 ~~~php
 <?php
@@ -310,9 +312,7 @@ $foo->bar($arg1);
 Foo::bar($arg2, $arg3);
 ~~~
 
-Argument lists MAY be split across multiple lines, where each subsequent line
-is indented once. When doing so, the first item in the list MUST be on the
-next line, and there MUST be only one argument per line.
+Список аргументов МОЖЕТ быть разбит на несколько строк, где каждая последующая строка с отступом. При этом первый элемент в списке ОБЯЗАН быть с новой строки и ОБЯЗАНО быть только по одному элементу на строку. 
 
 ~~~php
 <?php
