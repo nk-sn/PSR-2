@@ -297,12 +297,6 @@ abstract class ClassName
 
 ### 4.6. Методы и вызовы функций
 
-When making a method or function call, there MUST NOT be a space between the
-method or function name and the opening parenthesis, there MUST NOT be a space
-after the opening parenthesis, and there MUST NOT be a space before the
-closing parenthesis. In the argument list, there MUST NOT be a space before
-each comma, and there MUST be one space after each comma.
-
 При вызове метода или функции ОБЯЗАНО НЕ быть пробела между именем метода или функции и открывающей круглой скобки, ОБЯЗАНО НЕ быть пробела после открывающей круглой скобки, ОБЯЗАНО НЕ быть пробела до закрывающей круглой скобки. В списке аргументов ОБЯЗАНО НЕ быть пробела перед каждой запятой и ОБЯЗАН быть один пробел после каждой запятой.
 
 ~~~php
