@@ -317,21 +317,18 @@ $foo->bar(
 );
 ~~~
 
-## 5. Control Structures
+## 5. Управляющие конструкции
 
-The general style rules for control structures are as follows:
+Общие правила для управляющих конструкций следующие:
 
-- There MUST be one space after the control structure keyword
-- There MUST NOT be a space after the opening parenthesis
-- There MUST NOT be a space before the closing parenthesis
-- There MUST be one space between the closing parenthesis and the opening
-  brace
-- The structure body MUST be indented once
-- The closing brace MUST be on the next line after the body
+- ОБЯЗАН быть один пробел после ключевого слова контролирующей конструкции
+- ОБЯЗАНО НЕ быть пробела после открывающей круглой скобки
+- ОБЯЗАНО НЕ быть пробела до закрывающей круглой скобки
+- ОБЯЗАН быть один пробел между закрывающей круглой скобкой и открывающей фигурной скобкой
+- Тело конструкции ОБЯЗАНО быть с одним отступом
+- Закрывающая круглая скобка ОБЯЗАНА быть с новой строки после тела конструкции
 
-The body of each structure MUST be enclosed by braces. This standardizes how
-the structures look, and reduces the likelihood of introducing errors as new
-lines get added to the body.
+Тело каждой конструкции ОБЯЗАНО быть замкнуто круглыми скобками. Это стандартизирут вид конструкций, и уменьшает вероятность введения ошибок таких как добавление новых строк в тело конструкции.
 
 ### 5.1. `if`, `elseif`, `else`
 
