@@ -332,23 +332,20 @@ $foo->bar(
 
 ### 5.1. `if`, `elseif`, `else`
 
-An `if` structure looks like the following. Note the placement of parentheses,
-spaces, and braces; and that `else` and `elseif` are on the same line as the
-closing brace from the earlier body.
+Конструкция `if` выглядит следующим образом. Обратите внимание на размещение круглых скобок, пробелов и фигурных скобок; и что `else` и `elseif` на той же строке что и закрывающая фигурная скобка из предыдущего тела.
 
 ~~~php
 <?php
 if ($expr1) {
-    // if body
+    // тело if
 } elseif ($expr2) {
-    // elseif body
+    // тело elseif
 } else {
-    // else body;
+    // тело else
 }
 ~~~
 
-The keyword `elseif` SHOULD be used instead of `else if` so that all control
-keywords look like single words.
+Ключевое слово `elseif` СЛЕДУЕТ использовать вместо `else if`, чтобы все управляющие ключевые слова выглядила как единые слова.
 
 ### 5.2. `switch`, `case`
 
