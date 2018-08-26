@@ -373,63 +373,59 @@ switch ($expr) {
 
 ### 5.3. `while`, `do while`
 
-A `while` statement looks like the following. Note the placement of
-parentheses, spaces, and braces.
+Конструкция `while` выглядит следующим образом. Обратите внимание на размещение круглых скобок, пробелов и фигурных скобок.
 
 ~~~php
 <?php
 while ($expr) {
-    // structure body
+    // тело конструкции;
 }
 ~~~
 
-Similarly, a `do while` statement looks like the following. Note the placement
-of parentheses, spaces, and braces.
+По аналогии, конструкция `do while`выглядит следующим образом. Обратите внимание на размещение круглых скобок, пробелов и фигурных скобок. 
+
 
 ~~~php
 <?php
 do {
-    // structure body;
+    // тело конструкции;
 } while ($expr);
 ~~~
 
 ### 5.4. `for`
 
-A `for` statement looks like the following. Note the placement of parentheses,
-spaces, and braces.
+Конструкция `for` выглядит следующим образом. Обратите внимание на размещение круглых скобок, пробелов и фигурных скобок.
 
 ~~~php
 <?php
 for ($i = 0; $i < 10; $i++) {
-    // for body
+    // тело конструкции;
 }
 ~~~
 
 ### 5.5. `foreach`
 
-A `foreach` statement looks like the following. Note the placement of
-parentheses, spaces, and braces.
+Конструкция `foreach` выглядит следующим образом. Обратите внимание на размещение круглых скобок, пробелов и фигурных скобок.
 
 ~~~php
 <?php
 foreach ($iterable as $key => $value) {
-    // foreach body
+    // тело конструкции;
 }
 ~~~
 
 ### 5.6. `try`, `catch`
 
-A `try catch` block looks like the following. Note the placement of
-parentheses, spaces, and braces.
+Блок `try catch` выглядит следующим образом. Обратите внимание на размещение круглых скобок, пробелов и фигурных скобок.
 
 ~~~php
 <?php
 try {
-    // try body
+    // тело try
 } catch (FirstExceptionType $e) {
-    // catch body
+    // тело catch
 } catch (OtherExceptionType $e) {
-    // catch body
+    // тело catch
 }
 ~~~
 
