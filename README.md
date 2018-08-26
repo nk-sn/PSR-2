@@ -421,11 +421,11 @@ foreach ($iterable as $key => $value) {
 ~~~php
 <?php
 try {
-    // тело try
+    // тело try;
 } catch (FirstExceptionType $e) {
-    // тело catch
+    // тело catch;
 } catch (OtherExceptionType $e) {
-    // тело catch
+    // тело catch;
 }
 ~~~
 
