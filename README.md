@@ -429,17 +429,13 @@ try {
 }
 ~~~
 
-## 6. Closures
+## 6. Замыкания
 
-Closures MUST be declared with a space after the `function` keyword, and a
-space before and after the `use` keyword.
+Замыкания ОБЯЗАНЫ объявляться с пробелом после ключевого слова `function`, и с пробелом до и после ключевого слова `use`.
 
-The opening brace MUST go on the same line, and the closing brace MUST go on
-the next line following the body.
+Открывающая фигурная скобка ОБЯЗАНА идти на той же строке, и закрывающая фигурная скобка ОБЯЗАНА идти со следующей строки после тела функции. 
 
-There MUST NOT be a space after the opening parenthesis of the argument list
-or variable list, and there MUST NOT be a space before the closing parenthesis
-of the argument list or variable list.
+ОБЯЗАНО НЕ быть пробела после открывающей круглой скобки списка аргументов или спсика переменных, и ОБЯЗАНО НЕ быть пробела до закрывающей круглой скобки списка аргументов или списка переменных.
 
 In the argument list and variable list, there MUST NOT be a space before each
 comma, and there MUST be one space after each comma.
