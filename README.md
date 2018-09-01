@@ -437,23 +437,20 @@ try {
 
 ОБЯЗАНО НЕ быть пробела после открывающей круглой скобки списка аргументов или спсика переменных, и ОБЯЗАНО НЕ быть пробела до закрывающей круглой скобки списка аргументов или списка переменных.
 
-In the argument list and variable list, there MUST NOT be a space before each
-comma, and there MUST be one space after each comma.
+В списке аргументов и в списке переменных ОБЯЗАНО НЕ быть пробела перед каждой запятой, и ОБЯЗАН быть один пробел после каждой запятой.
 
-Closure arguments with default values MUST go at the end of the argument
-list.
+Аргументы замыканий со значениями по умолчанию ОБЯЗАНЫ быть в конце списка аргументов.
 
-A closure declaration looks like the following. Note the placement of
-parentheses, commas, spaces, and braces:
+Объявление замыкания выглядит слдующим образом. Обратите внимание на расположение круглых скобок, запятых, пробелов и фигруных скобок:
 
 ~~~php
 <?php
 $closureWithArgs = function ($arg1, $arg2) {
-    // body
+    // тело
 };
 
 $closureWithArgsAndVars = function ($arg1, $arg2) use ($var1, $var2) {
-    // body
+    // тело
 };
 ~~~
 
