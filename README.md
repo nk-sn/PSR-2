@@ -454,17 +454,11 @@ $closureWithArgsAndVars = function ($arg1, $arg2) use ($var1, $var2) {
 };
 ~~~
 
-Argument lists and variable lists MAY be split across multiple lines, where
-each subsequent line is indented once. When doing so, the first item in the
-list MUST be on the next line, and there MUST be only one argument or variable
-per line.
+Список аргументов и список переменных МОЖЕТ быть разделен на несколько строк, где каждая последующая строка с одним отступом. При этом первый элемент в списке ОБЯЗАН быть с новой строки и ОБЯЗАНО быть только по одному аргументу или переменной на строку.
 
-When the ending list (whether of arguments or variables) is split across
-multiple lines, the closing parenthesis and opening brace MUST be placed
-together on their own line with one space between them.
+Когда конечный список (будь то аргументов или переменных) разбит на несколько строк, закрывающая круглая скобка и открывающая фигурная скобка ОБЯЗАНЫ быть помещены вместе на одной строке с одним пробелом между ними.
 
-The following are examples of closures with and without argument lists and
-variable lists split across multiple lines.
+Ниже приведены примеры замыканий со списками аргументов и переменых разбитых на несколько строк и без разбития.
 
 ~~~php
 <?php
@@ -473,7 +467,7 @@ $longArgs_noVars = function (
     $longerArgument,
     $muchLongerArgument
 ) {
-    // body
+    // тело
 };
 
 $noArgs_longVars = function () use (
@@ -481,7 +475,7 @@ $noArgs_longVars = function () use (
     $longerVar2,
     $muchLongerVar3
 ) {
-    // body
+    // тело
 };
 
 $longArgs_longVars = function (
@@ -493,7 +487,7 @@ $longArgs_longVars = function (
     $longerVar2,
     $muchLongerVar3
 ) {
-    // body
+    // тело
 };
 
 $longArgs_shortVars = function (
@@ -501,7 +495,7 @@ $longArgs_shortVars = function (
     $longerArgument,
     $muchLongerArgument
 ) use ($var1) {
-    // body
+    // тело
 };
 
 $shortArgs_longVars = function ($arg) use (
@@ -509,42 +503,39 @@ $shortArgs_longVars = function ($arg) use (
     $longerVar2,
     $muchLongerVar3
 ) {
-    // body
+    // тело
 };
 ~~~
 
-Note that the formatting rules also apply when the closure is used directly
-in a function or method call as an argument.
+Обратите внимание, что правила форматирования также приминяются, когда замыкание используется непосредственно в функции или методе как аргумент.
 
 ~~~php
 <?php
 $foo->bar(
     $arg1,
     function ($arg2) use ($var1) {
-        // body
+        // тело
     },
     $arg3
 );
 ~~~
 
-## 7. Conclusion
+## 7. Заключение
 
-There are many elements of style and practice intentionally omitted by this
-guide. These include but are not limited to:
+Существует много элементов стиля и практик, пренамеренно опущенных этим руководством. К ним относятся, но не ограничиваются:
 
-- Declaration of global variables and global constants
+- Объявление глобальных переменных и глобальных констант
 
-- Declaration of functions
+- Объявление функций
 
-- Operators and assignment
+- Операторы и присвоения
 
-- Inter-line alignment
+- Межстрочное выравнивание
 
-- Comments and documentation blocks
+- Комментарии и блоки документации
 
-- Class name prefixes and suffixes
+- Префиксы и суффиксы имен классов
 
-- Best practices
+- Лучшие практики
 
-Future recommendations MAY revise and extend this guide to address those or
-other elements of style and practice.
+Будущие рекомендации МОГУТ пересматривать и расширять это руководство для обращения к этим или другим элементам стиля и практикам.
